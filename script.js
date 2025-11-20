@@ -16,6 +16,9 @@ async function getData() {
   let data = await res.json();
   totaldata = data.results[0];
 }
+window.addEventListener("load", () => {
+  getUser.click();
+});
 
 getUser.addEventListener("click", async () => {
 	await getData();
